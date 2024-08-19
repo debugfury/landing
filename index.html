@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>Find Your Perfect Laptop</h1>
+            <p>Explore our range of high-performance laptops designed to meet all your needs.</p>
+            <a href="#laptops" class="cta">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Top Features</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="images/laptop1.jpg" alt="Feature 1">
+                <h3>Powerful Performance</h3>
+                <p>Experience the best performance with the latest processors and graphics.</p>
+            </div>
+            <div class="feature">
+                <img src="images/laptop2.jpg" alt="Feature 2">
+                <h3>Sleek Design</h3>
+                <p>Modern and elegant designs that are built to impress and last.</p>
+            </div>
+            <div class="feature">
+                <img src="images/laptop3.jpg" alt="Feature 3">
+                <h3>Long Battery Life</h3>
+                <p>Stay productive longer with batteries that last all day.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="laptops">
+        <h2>Our Laptops</h2>
+        <div class="sort-menu">
+            <label for="sortPrice">Sort by Price:</label>
+            <select id="sortPrice" onchange="sortLaptops()">
+                <option value="default">Default</option>
+                <option value="low-high">Low to High</option>
+                <option value="high-low">High to Low</option>
+            </select>
+        </div>
+        <div id="laptopList" class="laptops-container">
+            <div class="laptop" data-price="999">
+                <img src="images/laptop1.jpg" alt="Laptop 1">
+                <h3>Laptop Model A</h3>
+                <p>$999</p>
+            </div>
+            <div class="laptop" data-price="1499">
+                <img src="images/laptop2.jpg" alt="Laptop 2">
+                <h3>Laptop Model B</h3>
+                <p>$1,499</p>
+            </div>
+            <div class="laptop" data-price="1999">
+                <img src="images/laptop3.jpg" alt="Laptop 3">
+                <h3>Laptop Model C</h3>
+                <p>$1,999</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Laptop Store - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
